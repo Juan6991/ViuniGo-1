@@ -12,9 +12,151 @@ body {
 
   /* Agrega más estilos específicos para dispositivos móviles según sea necesario */
 }
+/* Estilo para el header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff; /* Color del fondo */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para el header */
+}
+
+/* Logo */
+.logo img {
+  max-height: 50px; /* Tamaño máximo del logo */
+  width: auto;
+}
+
+/* Menú de categorías */
+.menu-categorias {
+  flex: 1;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end; /* Alinea el menú a la derecha */
+  flex-wrap: wrap; /* Permite que el menú se ajuste en pantallas pequeñas */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0 10px; /* Espaciado horizontal entre elementos */
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #007bff; /* Color al pasar el cursor */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Cambia el header a una disposición vertical */
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .menu {
+    flex-direction: column; /* Apila los elementos del menú verticalmente */
+    width: 100%;
+  }
+
+  .menu li {
+    margin: 5px 0; /* Reduce el espaciado entre elementos */
+    text-align: left;
+  }
+
+  .menu li a {
+    font-size: 14px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+  }
+}
+/* Estilo para el header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff; /* Color del fondo */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para el header */
+}
+
+/* Logo */
+.logo img {
+  max-height: 50px; /* Tamaño máximo del logo */
+  width: auto;
+}
+
+/* Menú de categorías */
+.menu-categorias {
+  flex: 1;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end; /* Alinea el menú a la derecha */
+  flex-wrap: wrap; /* Permite que el menú se ajuste en pantallas pequeñas */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0 10px; /* Espaciado horizontal entre elementos */
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #007bff; /* Color al pasar el cursor */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Cambia el header a una disposición vertical */
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .menu {
+    flex-direction: column; /* Apila los elementos del menú verticalmente */
+    width: 100%;
+  }
+
+  .menu li {
+    margin: 5px 0; /* Reduce el espaciado entre elementos */
+    text-align: left;
+  }
+
+  .menu li a {
+    font-size: 14px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+  }
+}
 
 header {
-  background-color: #7eafeb;
+  background-color: #aac8ec;
   padding: 6px;
   display: flex;
   align-items: center;
@@ -45,13 +187,13 @@ nav ul {
 }
 
 .menu li a:hover {
-  background-color: #ddd;
+  background-color: #95b0eb;
 }
 /* Estilos para el submenú */
 .submenu {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #9891f1;
   min-width: 160px;
   z-index: 1;
   list-style-type: none;
@@ -86,7 +228,7 @@ nav ul {
 
 .menu-slider .slide {
   position: relative;
-  display: inline-block;
+  display: inline;
   text-align: center;
 }
 
@@ -112,7 +254,7 @@ nav ul {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-
+    font-size: 12px;
 }
 
 .categorias {
@@ -142,6 +284,22 @@ nav ul {
   background-color: #333;
   color: white;
   font-size: 14px;
+}
+/* Estilo para las imágenes en la galería */
+.galeria img {
+  display: block; /* Para centrar la imagen */
+  margin: 0 auto; /* Para centrar la imagen horizontalmente */
+  width: 300px;
+  height: 300px;
+  object-fit: cover; /* Esto asegura que las imágenes se ajusten correctamente */
+  margin-bottom: 10px; /* Espacio entre la imagen y la descripción */
+}
+
+/* Estilo específico para la descripción de servicios */
+.galeria .descripcion-servicios {
+  text-align: center; /* Centrar el texto */
+  font-size: 14px;
+  color: #555; /* Color del texto */
 }
 
 /*Footer*/
@@ -190,4 +348,225 @@ nav ul {
 
 .footer-derechos {
   margin-top: 20px;
+}
+
+
+
+/* Estilo específico para los elementos de la galería con informacoion pension*/
+.galeria-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.imagen-principal {
+  max-width: 60%;
+  height: auto;
+  border: 2px solid #333;
+  margin-bottom: 20px;
+}
+
+.imagen-pequena {
+  max-width: 25%;
+  height: auto;
+  border: 2px solid #333;
+  margin: 0 10px 10px 0;
+}
+
+.descripcion {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.imagen-ampliada {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #333;
+}
+
+
+
+
+/* Estilos adicionales para centrar las imágenes principales */
+.galeria-2 {
+  text-align: center;
+}
+
+.imagen-principal {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+.modal-contenido {
+  display: block;
+  margin: auto;
+  width: 80%;
+  max-width: 700px;
+  max-height: 80%;
+}
+
+.cerrar-modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cerrar-modal:hover,
+.cerrar-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilo general para todas las imágenes en categorías y ciudades */
+.img-uniforme {
+  width: 250px; /* Ajusta el ancho según el diseño */
+  height: 150px; /* Ajusta el alto según el diseño */
+  object-fit: cover; /* Recorta la imagen para que se ajuste al tamaño sin deformarse */
+  border-radius: 8px; /* Opcional: esquinas redondeadas */
+  margin: 10px; /* Espaciado entre imágenes */
+  display: block; /* Para asegurarte de que se comporten bien en su contenedor */
+}
+/* Contenedor de imágenes */
+.imagenes-categorias{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta el número de columnas automáticamente */
+  gap: 20px; /* Espaciado entre imágenes */
+  justify-items: center; /* Centra las imágenes horizontalmente */
+}
+/* General para las secciones de categorías */
+.categoria {
+  text-align: center;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 800px; /* Ancho máximo para las secciones */
+  border-bottom: 2px solid #ddd; /* Línea divisoria entre categorías */
+}
+
+/* Estilo para las imágenes */
+.categoria img {
+  max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 10px; /* Bordes redondeados para las imágenes */
+  margin: 20px 0; /* Espaciado alrededor de la imagen */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar la imagen */
+}
+
+/* Encabezados de las categorías */
+.categoria h2 {
+  font-size: 24px;
+  color: #333; /* Cambia este color según tu diseño */
+  margin-bottom: 10px;
+}
+
+/* Texto descriptivo de las categorías */
+.categoria p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Estilo responsive */
+/* General del header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #89c3eb; /* Fondo del header */
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* Botón hamburguesa */
+.hamburguesa {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Ocultar en pantallas grandes */
+}
+
+/* Menú */
+.menu-categorias {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo de los enlaces */
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu li a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Vista móvil: Menú oculto inicialmente */
+/* Vista móvil: Menú oculto inicialmente */
+@media (max-width: 768px) {
+  .hamburguesa {
+    display: block; /* Mostrar botón hamburguesa */
+  }
+
+  .menu {
+    display: none; /* Ocultar menú inicialmente */
+    flex-direction: column; /* Alinear enlaces verticalmente */
+    position: absolute;
+    top: 60px; /* Espaciado debajo del header */
+    right: 0;
+    width: 100%; /* Menú ocupa todo el ancho */
+    background-color: #89c3eb;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .menu.abierto {
+    display: flex; /* Mostrar menú cuando se activa */
+  }
+
+  .menu li {
+    text-align: center;
+  }
+
+  .menu li a {
+    font-size: 18px;
+    padding: 10px;
+  }
 }

@@ -1,139 +1,98 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>ViUniGo - Menú de Servicios</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="/css/style2.css">
     <link rel="icon" href="/img/Icon.png" type="image/x-icon">
-    <!-- Enlaza el archivo de estilos externo -->
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <!-- Coloca aquí el código o la imagen del logotipo -->
-        <a href="movile.html">
-          <img src="/img/Logo-blank.png" alt="Logo ViUniGo" />
-        </a>        
-      </div>
-      <nav>
-        <ul class="menu">
-          <li class="center">
-            <a href="#ciudad">Ciudad</a>
-            <ul class="submenu">
-              <li><a href="ciudad.html">Barranquilla</a></li>
-              <li><a href="ciudad.html">Montería</a></li>
-              <li><a href="ciudad.html">Cartagena</a></li>
-              <li><a href="ciudad.html">Medellín</a></li>
-              <li><a href="ciudad.html">Bogotá</a></li>
-            </ul>
-          </li>
-          <li class="center"><a href="#historia">Nuestra historia</a></li>
-          <li class="right">
-            <input type="text" id="busqueda" placeholder="Buscar" />
-            <button onclick="realizarBusqueda()">Buscar</button>
-          </li>
-          <li class="right" style="background-color: #4caf50">
-            <a href="#contacto">Contáctanos</a>
-          </li>
-          <!-- Puedes agregar más opciones aquí -->
-        </ul>
-      </nav>
-    </header>
 
-    <div class="slider">
-      <div class="slides">
-        <div class="slide"><img src="img/pension1.jpg" alt="Slide 1" /></div>
-        <div class="slide"><img src="img/pension2.jpg" alt="Slide 2" /></div>
-        <div class="slide"><img src="img/pension3.jpg" alt="Slide 3" /></div>
-        <!-- Agrega más imágenes como sea necesario -->
-      </div>
-    </div>
-
-    <h1>ViUniGo: Vive tu estadia Universitaria en el mejor Sitio</h1>
-    <div class="novedades">
-      <!-- Sección para las noticias y novedades -->
-      <h2>Novedades</h2>
-      <div class="novedad">
-        <img src="img/pension1.jpg" alt="Novedad 1" />
-        <h3>Título de la novedad 1</h3>
-        <p>Descripción de la novedad 1</p>
-      </div>
-      <div class="novedad">
-        <img src="img/pension3.jpg" alt="Novedad 2" />
-        <h3>Título de la novedad 2</h3>
-        <p>Descripción de la novedad 2</p>
-      </div>
-      <div class="novedad">
-        <img src="img/pension2.jpg" alt="Novedad 2" />
-        <h3>Título de la novedad 3</h3>
-        <p>Descripción de la novedad 3</p>
-      </div>
-      <div class="novedad">
-        <img src="img/pension1.jpg" alt="Novedad 2" />
-        <h3>Título de la novedad 4</h3>
-        <p>Descripción de la novedad 4</p>
-      </div>
-      <!-- Agrega más novedades si es necesario -->
-    </div>
-
-    <div class="informacion-empresa">
-      <!-- Sección para mostrar las redes sociales y medios de contacto -->
-        <h2>Información de la Empresa</h2>
-
-          <h3>Ventajas de trabajar con nosotros</h3>
-          <div class="ventaja">
-            <img src="img/pension2.jpg" alt="Ventaja 1" />
-            <p>Texto explicativo sobre la ventaja 1.</p>
-          </div>
-          <div class="ventaja">
-            <img src="img/pension3.jpg" alt="Ventaja 2" />
-            <p>Texto explicativo sobre la ventaja 2.</p>
-          </div>
-        <div class="ventaja">
-          <img src="img/pension2.jpg" alt="Ventaja 3" />
-          <p>Texto explicativo sobre la ventaja 3.</p>
+</head>
+<body>
+    <div class="login-container">
+        <div class="signin-signup">
+            <form action="frontend/index.html" class="sign-in-form">
+                <h2>Iniciar sesión</h2>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" name="username" placeholder="Usuario" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password"  placeholder="Contraseña">
+                </div>
+                <button type="submit">Iniciar sesión</button>
+                <p class="social-text">O Inicia Sesion Desde tus Redes Sociales</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <P class="account-text" >¿No tienes una cuenta? <a href="#" id="sign-in-btn2"> Registrate aqui</a> </P>
+            </form>
+            <form action="index.html" class="sign-up-form">
+                <h2>Registrarse</h2>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" name="username" placeholder="Usuario" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" id="Email" name="Email" placeholder="Correo" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <button type="submit">Registrarse</button>
+                
+                <p class="social-text">O Inicia Sesion Desde tus Redes Sociales</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <P class="account-text" >¿Ya tienes una cuenta? <a href="#" id="sign-up-btn2"> Inicia Sesion aqui</a> </P>
+            </form>
         </div>
-        <div class="ventaja">
-          <img src="img/pension3.jpg" alt="Ventaja 4" />
-          <p>Texto explicativo sobre la ventaja 4.</p>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Member of Brand?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem in, numquam blanditiis aliquid quod soluta vero quo perferendis laboriosam totam tenetur quos voluptas at sunt iste corporis optio. Unde.</p>
+                    <button class="btn" id="sign-in-btn" >Sign in</button>
+                </div>
+                <img src="/img/ViUniGo_Icon.png" alt="" class="images">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>New to Brand?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem in, numquam blanditiis aliquid quod soluta vero quo perferendis laboriosam totam tenetur quos voluptas at sunt iste corporis optio. Unde.</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="/img/ViUniGo_Icon.png" alt="" class="images">
+            </div>
         </div>
-
     </div>
-      
-    <div class="barrios" id="barrios">
-      <!-- Los elementos de barrio se agregan dinámicamente desde el script -->
-    </div>
-
-    <div class="informacion" id="pensiones">
-      <!-- Aquí se mostrarán las imágenes de las pensiones -->
-    </div>
-    <div class="informacion" id="informacion-pension">
-      <!-- Aquí se mostrará la información detallada de las pensiones -->
-    </div>
-
-    <div class="resultados-busqueda" id="resultados-busqueda">
-      <!-- Aquí se mostrarán los resultados de la búsqueda -->
-    </div>
-    <footer class="footer">
-      <div class="footer-contenido">
-          <div class="footer-columna">
-              <h3>Contacto</h3>
-              <p>Correo: info@viunigo.com</p>
-              <p>Teléfono: +123456789</p>
-          </div>
-          <div class="footer-columna">
-              <h3>Redes Sociales</h3>
-              <ul class="redes-sociales">
-                  <li><a href="#">Facebook</a></li>
-                  <li><a href="#">Twitter</a></li>
-                  <li><a href="#">Instagram</a></li>
-              </ul>
-          </div>
-      </div>
-      <div class="footer-derechos">
-          <p>&copy; 2024 ViUniGo. Todos los derechos reservados.</p>
-      </div>
-  </footer>
     <script src="/js/script.js"></script>
-  </body>
+</body>
 </html>

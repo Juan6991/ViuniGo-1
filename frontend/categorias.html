@@ -6,89 +6,99 @@
   <title>ViUniGo - Find your Stay House</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/movil.css" />
+  <link rel="stylesheet" href="/css/categorias.css" />
   <link rel="icon" href="/img/Icon.png" type="image/x-icon">
 </head>
 
 <body>
   <header>
     <div class="logo">
-        <!-- Coloca aquí el código o la imagen del logotipo -->
-        <a href="index.html">
-            <img src="/img/Logo-blank.png" alt="Logo ViUniGo" />
-        </a>
+      <!-- Logotipo -->
+      <a href="index.html">
+        <img src="/img/Logo-blank.png" alt="Logo ViUniGo" />
+      </a>
     </div>
-    <nav>
-        <ul class="menu">
-            <li class="center">
-                <a href="#ciudad">Ciudad</a>
-                <ul class="submenu">
-                    <li><a href="categorias.html">Barranquilla</a></li>
-                    <li><a href="categorias.html">Montería</a></li>
-                    <li><a href="categorias.html">Cartagena</a></li>
-                    <li><a href="categorias.html">Medellín</a></li>
-                    <li><a href="categorias.html">Bogotá</a></li>
-                    <li><a href="categorias.html">Santa Marta</a></li>
-                </ul>
-            </li>
-            <li class="center"><a href="#historia">Nuestra historia</a></li>
-            <!-- Puedes agregar más opciones aquí -->
-        </ul>
+  
+    <!-- Botón hamburguesa -->
+    <button class="hamburguesa" aria-label="Abrir menú">
+      ☰
+    </button>
+  
+    <nav class="menu-categorias">
+      <ul class="menu">
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#pensiones">Pensiones</a></li>
+        <li><a href="#independientes">Independientes</a></li>
+        <li><a href="#casas">Casas</a></li>
+        <li><a href="#hoteles">Hoteles</a></li>
+        <li><a href="#historia">Nuestra historia</a></li>
+        <li><a href="/frontend/contacto.html">Contáctanos aquí</a></li>
+      </ul>
     </nav>
-    <div class="user-icon">
-        <a href="index2.html">
-            <img src="/img/user-icon.png" alt="Icono de usuario" />
-        </a>
-    </div>
-</header>
-  <h1>ViUniGo: Vive tu estadia Universitaria en el mejor Sitio</h1>
-  <div class="categorias">
-    <div class="categoria">
-      <a href="apartamentosc.html">
-        <img src="../img/Apartamento-compartido.jpg" alt="Categoría 7">
-        <div class="categoria-text">Apartamentos Compartidos</div>
-      </a>
-    </div>
-    <div class="categoria">
-      <a href="arriendos.html">
-        <img src="../img/Arriendos.jpg" alt="Categoría 8">
-        <div class="categoria-text">Arriendos</div>
-      </a>
-    </div>
-    <div class="categoria">
-      <a href="cuartosc.html">
-        <img src="../img/cuarto-compartido.jpg" alt="Categoría 2">
-        <div class="categoria-text">Cuartos Compartidos</div>
-      </a>
-    </div>
+  </header>
+  
+  <nav class="menu-categorias">
+    <ul class="menu">
+      <li><a href="#habitaciones">Habitaciones</a></li>
+      <li><a href="#pensiones">Pensiones</a></li>
+      <li><a href="#independientes">Independientes</a></li>
+      <li><a href="#casas">Casas</a></li>
+      <li><a href="#hoteles">Hoteles</a></li>
+    </ul>
+  </nav>
+  
 
-    <!-- Repite este bloque para más categorías -->
-    <!-- Segunda fila -->
-    <div class="categoria">
-      <a href="cuartosi.html">
-        <img src="../img/cuarto-individual.jpg" alt="Categoría 1">
-        <div class="categoria-text">Cuartos Individuales</div>
+  <!-- Secciones por Categorías -->
+  <main>
+    <section id="habitaciones" class="categoria">
+      <h2>Habitaciones</h2>
+      <p>Aquí encontrarás las mejores habitaciones para ti.</p>
+      <a href="apartamentosc.html">
+        <img src="/img/cuarto-individual.jpg" alt="Habitaciones" class="imagen-categoria" />
       </a>
-      
-    </div>
-    <div class="categoria">
-      <a href="pensiones.html">
-        <img src="../img/Pension.jpg" alt="Categoría 2">
-        <div class="categoria-text">Pension</div>
+    </section>
+  
+    <section id="pensiones" class="categoria">
+      <h2>Pensiones</h2>
+      <p>Explora nuestras opciones de pensiones accesibles y cómodas.</p>
+      <a href="apartamentosc.html">
+        <img src="/img/Pension.jpg" alt="Pensiones" class="imagen-categoria" />
       </a>
-    </div>
-    <div class="categoria">
-      <a href="habitacionesi.html">
-        <img src="../img/Habitacion-Independiente.jpg" alt="Categoría 8">
-        <div class="categoria-text">Habitaciones Independientes</div>
+    </section>
+  
+    <section id="independientes" class="categoria">
+      <h2>Independientes</h2>
+      <p>Espacios independientes para mayor privacidad y comodidad.</p>
+      <a href="apartamentosc.html">
+        <img src="/img/Habitacion-Independiente.jpg" alt="Independientes" class="imagen-categoria" />
       </a>
-    </div>
-  </div>
+    </section>
+  
+    <section id="casas" class="categoria">
+      <h2>Casas</h2>
+      <p>Encuentra casas completas ideales para familias o grupos.</p>
+      <a href="apartamentosc.html">
+        <img src="/img/pension2.jpg" alt="Casas" class="imagen-categoria" />
+      </a>
+    </section>
+  
+    <section id="hoteles" class="categoria">
+      <h2>Hoteles</h2>
+      <p>Hospédate en los mejores hoteles con servicios exclusivos.</p>
+      <a href="apartamentosc.html">
+        <img src="/img/pension3.jpg" alt="Hoteles" class="imagen-categoria" />
+      </a>
+    </section>
+  </main>
+  
+
+
   <footer class="footer">
     <div class="footer-contenido">
       <div class="footer-columna">
         <h3>Contacto</h3>
-        <p>Correo: info@viunigo.com</p>
-        <p>Teléfono: +123456789</p>
+        <p>Correo: <a href="mailto:info@viunigo.com">info@viunigo.com</a></p>
+        <p>Teléfono: <a href="tel:+123456789">+123456789</a></p>
       </div>
       <div class="footer-columna">
         <h3>Redes Sociales</h3>
@@ -103,7 +113,18 @@
       <p>&copy; 2024 ViUniGo. Todos los derechos reservados.</p>
     </div>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const botonHamburguesa = document.querySelector(".hamburguesa");
+      const menu = document.querySelector(".menu");
+  
+      botonHamburguesa.addEventListener("click", function () {
+        menu.classList.toggle("abierto");
+      });
+    });
+  </script>
+  
   <script src="/js/script.js"></script>
-</body>
 
+</body>
 </html>

@@ -1,5 +1,14 @@
-// Cambio de inicio a registro
+// Menu Hamburguesa
+document.addEventListener("DOMContentLoaded", function () {
+    const botonHamburguesa = document.querySelector(".hamburguesa");
+    const menu = document.querySelector(".menu");
 
+    botonHamburguesa.addEventListener("click", function () {
+      menu.classList.toggle("abierto"); // Activa o desactiva la clase 'abierto'
+    });
+  });
+
+// Cambio de inicio a registro
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
 const container = document.querySelector(".login-container");
@@ -95,4 +104,47 @@ function cambiarImagen(direccion) {
 $('.cerrar-modal').on('click', function() {
     $('#modal').css('display', 'none');
 });
+
+// Seleccionar los enlaces del menú
+const enlaces = document.querySelectorAll('.menu-categorias a');
+
+// Escuchar el evento de clic en cada enlace
+enlaces.forEach(enlace => {
+  enlace.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevenir el comportamiento por defecto
+
+    // Obtener la sección destino del enlace
+    const seccionDestino = document.querySelector(enlace.getAttribute('href'));
+
+    // Desplazar suavemente hacia la sección destino
+    seccionDestino.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+
+    // Resaltar el enlace activo
+    enlaces.forEach(link => link.classList.remove('active'));
+    enlace.classList.add('active');
+  });
+});
+
+// Resaltar automáticamente según la sección visible al hacer scroll
+window.addEventListener('scroll', () => {
+  const secciones = document.querySelectorAll('.categoria');
+  let scrollPos = window.scrollY;
+
+  secciones.forEach(seccion => {
+    const offsetTop = seccion.offsetTop - 100; // Ajuste para el menú sticky
+    const offsetBottom = offsetTop + seccion.offsetHeight;
+
+    const enlace = document.querySelector(`.menu-categorias a[href="#${seccion.id}"]`);
+
+    if (scrollPos >= offsetTop && scrollPos < offsetBottom) {
+      enlaces.forEach(link => link.classList.remove('active'));
+      enlace.classList.add('active');
+    }
+  });
+});
+
+
 
